@@ -1,7 +1,7 @@
 commonLabels:
-  app: testApp
+  app: testAppNode
 resources:
 - deployment.yaml
 - service.yaml
 configMapGenerator:
-- name: test-map
+- name: test-node-map
