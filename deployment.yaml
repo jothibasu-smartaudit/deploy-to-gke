@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: test-container
-        image: gcr.io/teak-perigee-229014/gke-test
+        image: gcr.io/teak-perigee-229014/test
