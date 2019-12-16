@@ -22,7 +22,7 @@ env:
   GITHUB_SHA: ${{ github.sha }}
   GKE_ZONE: asia-east1-a
   GKE_CLUSTER:  test-cluster
-  IMAGE: gke-test
+  IMAGE: test-node
 
 jobs:
   setup-build-publish-deploy:
