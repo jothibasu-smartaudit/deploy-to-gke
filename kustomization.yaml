@@ -5,5 +5,3 @@ resources:
 - service.yaml
 configMapGenerator:
 - name: test-map
-  files:
-  - env.startup.txt
