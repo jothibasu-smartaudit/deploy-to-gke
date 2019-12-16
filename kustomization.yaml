@@ -1,1 +1,17 @@
-
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: test-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test
+  template:
+    metadata:
+      labels:
+        app: test
+    spec:
+      containers:
+      - name: test-container
+        image: gcr.io/teak-perigee-229014/gke-test
