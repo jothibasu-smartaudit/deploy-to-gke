@@ -1,0 +1,9 @@
+commonLabels:
+  app: testApp
+resources:
+- deployment.yaml
+- service.yaml
+configMapGenerator:
+- name: test-map
+  files:
+  - env.startup.txt
