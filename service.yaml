@@ -1,9 +1,9 @@
-apiVersion: apps/v1
-kind: LoadBalancer
+apiVersion: v1
+kind: Service
 metadata:
-  name: test-service-node-new
+  name: test-service-node
   labels:
-    app: test-service-node-new
+    app: test-service-node
 spec:
   ports:
   - port: 8080
