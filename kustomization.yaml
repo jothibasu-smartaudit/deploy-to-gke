@@ -3,5 +3,6 @@ commonLabels:
 resources:
 - deployment.yaml
 - service.yaml
+- hpa.yml
 configMapGenerator:
 - name: test-node-map
