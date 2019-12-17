@@ -13,7 +13,7 @@ name: Build and Deploy to GKE
 on:
   push:
     branches:
-    - master
+    - dev
 
 # Environment variables available to all jobs and steps in this workflow
 env:
@@ -21,7 +21,7 @@ env:
   GKE_EMAIL: ${{ secrets.GKE_EMAIL }}
   GITHUB_SHA: ${{ github.sha }}
   GKE_ZONE: asia-east1-a
-  GKE_CLUSTER:  test-cluster
+  GKE_CLUSTER:  test-cluster-dev
   IMAGE: test-node
 
 jobs:
